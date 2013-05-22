@@ -6,14 +6,25 @@
 //  Copyright (c) 2013 PocketScience. All rights reserved.
 //
 
-#import "PSCAppDelegate.h"
+#import "AppDelegate.h"
+#import "PSCRevelationController.h"
+#import "PSCMenuViewController.h"
+#import "PSCContentViewController.h"
 
-@implementation PSCAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    PSCRevelationController *revelationController = [[PSCRevelationController alloc] init];
+    self.window.rootViewController = revelationController;
+    PSCMenuViewController *menuViewController= [[PSCMenuViewController alloc] init];
+    [revelationController setLeftBackgroundViewController:menuViewController openLength:200.f closedLength:20.f];
+    PSCContentViewController *contentViewController = [[PSCContentViewController alloc] init];
+    contentViewController.view.backgroundColor = [UIColor brownColor];
+    [revelationController setContentViewController:contentViewController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

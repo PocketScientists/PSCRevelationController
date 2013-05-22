@@ -7,18 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064CB941174CF89A00194BE8 /* PSCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CB940174CF89A00194BE8 /* PSCMenuViewController.m */; };
+		064CB944174CF8EE00194BE8 /* PSCContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CB943174CF8EE00194BE8 /* PSCContentViewController.m */; };
 		068DBD4C174CF2D1006D1022 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068DBD4B174CF2D1006D1022 /* UIKit.framework */; };
 		068DBD4E174CF2D1006D1022 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068DBD4D174CF2D1006D1022 /* Foundation.framework */; };
 		068DBD50174CF2D1006D1022 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068DBD4F174CF2D1006D1022 /* CoreGraphics.framework */; };
 		068DBD56174CF2D1006D1022 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068DBD54174CF2D1006D1022 /* InfoPlist.strings */; };
 		068DBD58174CF2D1006D1022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 068DBD57174CF2D1006D1022 /* main.m */; };
-		068DBD5C174CF2D1006D1022 /* PSCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 068DBD5B174CF2D1006D1022 /* PSCAppDelegate.m */; };
+		068DBD5C174CF2D1006D1022 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 068DBD5B174CF2D1006D1022 /* AppDelegate.m */; };
 		068DBD5E174CF2D1006D1022 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 068DBD5D174CF2D1006D1022 /* Default.png */; };
 		068DBD60174CF2D1006D1022 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 068DBD5F174CF2D1006D1022 /* Default@2x.png */; };
 		068DBD62174CF2D1006D1022 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 068DBD61174CF2D1006D1022 /* Default-568h@2x.png */; };
+		068DBD6A174CF33C006D1022 /* PSCRevelationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 068DBD69174CF33C006D1022 /* PSCRevelationController.m */; };
+		068DBD6D174CF414006D1022 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068DBD6C174CF414006D1022 /* QuartzCore.framework */; };
+		068DBD73174CF476006D1022 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068DBD4D174CF2D1006D1022 /* Foundation.framework */; };
+		068DBD7F174CF4CB006D1022 /* PSCRevelationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 068DBD69174CF33C006D1022 /* PSCRevelationController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		068DBD70174CF476006D1022 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		064CB93F174CF89A00194BE8 /* PSCMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCMenuViewController.h; sourceTree = "<group>"; };
+		064CB940174CF89A00194BE8 /* PSCMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCMenuViewController.m; sourceTree = "<group>"; };
+		064CB942174CF8EE00194BE8 /* PSCContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCContentViewController.h; sourceTree = "<group>"; };
+		064CB943174CF8EE00194BE8 /* PSCContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCContentViewController.m; sourceTree = "<group>"; };
 		068DBD48174CF2D1006D1022 /* PSCRevelationViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSCRevelationViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		068DBD4B174CF2D1006D1022 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		068DBD4D174CF2D1006D1022 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -27,11 +49,15 @@
 		068DBD55174CF2D1006D1022 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		068DBD57174CF2D1006D1022 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		068DBD59174CF2D1006D1022 /* PSCRevelationViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PSCRevelationViewController-Prefix.pch"; sourceTree = "<group>"; };
-		068DBD5A174CF2D1006D1022 /* PSCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSCAppDelegate.h; sourceTree = "<group>"; };
-		068DBD5B174CF2D1006D1022 /* PSCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSCAppDelegate.m; sourceTree = "<group>"; };
+		068DBD5A174CF2D1006D1022 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PSCRevelationViewController/AppDelegate.h; sourceTree = "<group>"; };
+		068DBD5B174CF2D1006D1022 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PSCRevelationViewController/AppDelegate.m; sourceTree = "<group>"; };
 		068DBD5D174CF2D1006D1022 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		068DBD5F174CF2D1006D1022 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		068DBD61174CF2D1006D1022 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		068DBD68174CF33C006D1022 /* PSCRevelationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCRevelationController.h; sourceTree = "<group>"; };
+		068DBD69174CF33C006D1022 /* PSCRevelationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCRevelationController.m; sourceTree = "<group>"; };
+		068DBD6C174CF414006D1022 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		068DBD72174CF476006D1022 /* libPSCRevelationController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPSCRevelationController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +65,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				068DBD6D174CF414006D1022 /* QuartzCore.framework in Frameworks */,
+				068DBD50174CF2D1006D1022 /* CoreGraphics.framework in Frameworks */,
 				068DBD4C174CF2D1006D1022 /* UIKit.framework in Frameworks */,
 				068DBD4E174CF2D1006D1022 /* Foundation.framework in Frameworks */,
-				068DBD50174CF2D1006D1022 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		068DBD6F174CF476006D1022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068DBD73174CF476006D1022 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +86,7 @@
 		068DBD3F174CF2D1006D1022 = {
 			isa = PBXGroup;
 			children = (
+				068DBD6B174CF348006D1022 /* Demo */,
 				068DBD51174CF2D1006D1022 /* PSCRevelationViewController */,
 				068DBD4A174CF2D1006D1022 /* Frameworks */,
 				068DBD49174CF2D1006D1022 /* Products */,
@@ -61,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				068DBD48174CF2D1006D1022 /* PSCRevelationViewController.app */,
+				068DBD72174CF476006D1022 /* libPSCRevelationController.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +105,7 @@
 		068DBD4A174CF2D1006D1022 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				068DBD6C174CF414006D1022 /* QuartzCore.framework */,
 				068DBD4B174CF2D1006D1022 /* UIKit.framework */,
 				068DBD4D174CF2D1006D1022 /* Foundation.framework */,
 				068DBD4F174CF2D1006D1022 /* CoreGraphics.framework */,
@@ -78,8 +116,8 @@
 		068DBD51174CF2D1006D1022 /* PSCRevelationViewController */ = {
 			isa = PBXGroup;
 			children = (
-				068DBD5A174CF2D1006D1022 /* PSCAppDelegate.h */,
-				068DBD5B174CF2D1006D1022 /* PSCAppDelegate.m */,
+				068DBD68174CF33C006D1022 /* PSCRevelationController.h */,
+				068DBD69174CF33C006D1022 /* PSCRevelationController.m */,
 				068DBD52174CF2D1006D1022 /* Supporting Files */,
 			);
 			path = PSCRevelationViewController;
@@ -99,12 +137,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		068DBD6B174CF348006D1022 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				068DBD5A174CF2D1006D1022 /* AppDelegate.h */,
+				068DBD5B174CF2D1006D1022 /* AppDelegate.m */,
+				064CB93F174CF89A00194BE8 /* PSCMenuViewController.h */,
+				064CB940174CF89A00194BE8 /* PSCMenuViewController.m */,
+				064CB942174CF8EE00194BE8 /* PSCContentViewController.h */,
+				064CB943174CF8EE00194BE8 /* PSCContentViewController.m */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		068DBD47174CF2D1006D1022 /* PSCRevelationViewController */ = {
+		068DBD47174CF2D1006D1022 /* PSCRevelationViewControllerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 068DBD65174CF2D1006D1022 /* Build configuration list for PBXNativeTarget "PSCRevelationViewController" */;
+			buildConfigurationList = 068DBD65174CF2D1006D1022 /* Build configuration list for PBXNativeTarget "PSCRevelationViewControllerDemo" */;
 			buildPhases = (
 				068DBD44174CF2D1006D1022 /* Sources */,
 				068DBD45174CF2D1006D1022 /* Frameworks */,
@@ -114,10 +165,27 @@
 			);
 			dependencies = (
 			);
-			name = PSCRevelationViewController;
+			name = PSCRevelationViewControllerDemo;
 			productName = PSCRevelationViewController;
 			productReference = 068DBD48174CF2D1006D1022 /* PSCRevelationViewController.app */;
 			productType = "com.apple.product-type.application";
+		};
+		068DBD71174CF476006D1022 /* Static Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 068DBD7B174CF476006D1022 /* Build configuration list for PBXNativeTarget "Static Library" */;
+			buildPhases = (
+				068DBD6E174CF476006D1022 /* Sources */,
+				068DBD6F174CF476006D1022 /* Frameworks */,
+				068DBD70174CF476006D1022 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Static Library";
+			productName = "Static Library";
+			productReference = 068DBD72174CF476006D1022 /* libPSCRevelationController.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -141,7 +209,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				068DBD47174CF2D1006D1022 /* PSCRevelationViewController */,
+				068DBD47174CF2D1006D1022 /* PSCRevelationViewControllerDemo */,
+				068DBD71174CF476006D1022 /* Static Library */,
 			);
 		};
 /* End PBXProject section */
@@ -166,7 +235,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				068DBD58174CF2D1006D1022 /* main.m in Sources */,
-				068DBD5C174CF2D1006D1022 /* PSCAppDelegate.m in Sources */,
+				068DBD5C174CF2D1006D1022 /* AppDelegate.m in Sources */,
+				068DBD6A174CF33C006D1022 /* PSCRevelationController.m in Sources */,
+				064CB941174CF89A00194BE8 /* PSCMenuViewController.m in Sources */,
+				064CB944174CF8EE00194BE8 /* PSCContentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		068DBD6E174CF476006D1022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068DBD7F174CF4CB006D1022 /* PSCRevelationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +344,30 @@
 			};
 			name = Release;
 		};
+		068DBD7C174CF476006D1022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Static_Library.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSCRevelationViewController/PSCRevelationViewController-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PSCRevelationController;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		068DBD7D174CF476006D1022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Static_Library.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSCRevelationViewController/PSCRevelationViewController-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PSCRevelationController;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,13 +380,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		068DBD65174CF2D1006D1022 /* Build configuration list for PBXNativeTarget "PSCRevelationViewController" */ = {
+		068DBD65174CF2D1006D1022 /* Build configuration list for PBXNativeTarget "PSCRevelationViewControllerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				068DBD66174CF2D1006D1022 /* Debug */,
 				068DBD67174CF2D1006D1022 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		068DBD7B174CF476006D1022 /* Build configuration list for PBXNativeTarget "Static Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068DBD7C174CF476006D1022 /* Debug */,
+				068DBD7D174CF476006D1022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
